@@ -12,14 +12,19 @@ public class LoginFunctionalTest extends BaseTest {
     HomePage home;
     @BeforeClass
     public void pageInitiation(){
-        setup();
         home = new HomePage(driver);
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void pageTitleAndLogoVerification(){
         home.homePageVerification();
     }
+
+    @Test(priority = 2)
+    public void alertHandling(){
+        home.alertAndPopupHandle();
+    }
+
 
 }
