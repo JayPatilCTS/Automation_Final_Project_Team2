@@ -32,7 +32,7 @@ public class HomePage {
     public void alertAndPopupHandle(){
         try { Alert alert = driver.switchTo().alert();
             System.out.println("Alert text: " + alert.getText());
-            alert.accept(); // or alert.dismiss()
+            alert.accept();
 
             WebElement cookieBanner = driver.findElement(By.id("cookie-accept"));
             cookieBanner.click();
