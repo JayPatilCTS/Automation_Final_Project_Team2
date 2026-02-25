@@ -5,12 +5,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 
 import java.time.Duration;
 
 public class BaseTest {
     public WebDriver driver;
+    public WebDriverWait wait;
 
     @BeforeSuite
     @Parameters("browser")
@@ -38,10 +40,10 @@ public class BaseTest {
         driver.get("https://www.decathlon.in/");
     }
 
-    @AfterSuite
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-    }
+//    @AfterSuite
+//    public void tearDown() {
+//        if (driver != null) {
+//            driver.quit();
+//        }
+//    }
 }
