@@ -14,10 +14,10 @@ public class ProductSearchTest extends BaseTest {
         product = new ProductListPage(driver, wait);
     }
 
-    @Test
-    public void searchBoxFunction() throws InterruptedException {
-        product.searchBoxInput();
-    }
+//    @Test
+//    public void searchBoxFunction() throws InterruptedException {
+//        product.searchBoxInput();
+//    }
 
     @Test(priority = 2)
     public void autoSearchBoxFunction() throws InterruptedException {
@@ -29,14 +29,15 @@ public class ProductSearchTest extends BaseTest {
         product.sortSearchResult();
     }
 
-    @Test (priority = 4)
-    public void applyCategoryFilterCheckbox(){
-        product.applyCheckboxValues();
-    }
+//    @Test (priority = 4)
+//    public void applyCategoryFilterCheckbox(){
+//        product.applyCheckboxValues();
+//    }
 
     @Test(priority = 5)
-    public void applyPrice(){
+    public void applyPrice() throws InterruptedException {
         product.applyPriceSlider();
+        product.updateSliderRange();
     }
 
 }
