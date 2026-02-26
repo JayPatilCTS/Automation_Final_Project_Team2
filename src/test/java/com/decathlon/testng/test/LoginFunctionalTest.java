@@ -18,6 +18,8 @@ public class LoginFunctionalTest extends BaseTest {
 
     @Test(priority = 1)
     public void pageTitleAndLogoVerification(){
+        String mainParent1 = driver.getWindowHandle();
+        System.out.println("home - "+mainParent1);
         home.homePageVerification();
     }
 

@@ -4,6 +4,7 @@ import com.decathlon.base.BaseTest;
 import com.decathlon.pages.HomePage;
 import com.decathlon.pages.ProductListPage;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class ProductSearchTest extends BaseTest {
@@ -14,8 +15,10 @@ public class ProductSearchTest extends BaseTest {
         product = new ProductListPage(driver, wait);
     }
 
-    @Test
+    @Test(priority = 1)
     public void searchBoxFunction() throws InterruptedException {
+        String mainParent1 = driver.getWindowHandle();
+        System.out.println("home - "+mainParent1);
         product.searchBoxInput();
     }
 
@@ -35,7 +38,7 @@ public class ProductSearchTest extends BaseTest {
     }
 
     @Test(priority = 5)
-    public void applyPrice(){
+    public void applyPrice() throws InterruptedException {
         product.applyPriceSlider();
     }
 

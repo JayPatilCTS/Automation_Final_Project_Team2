@@ -14,7 +14,7 @@ public class BaseTest {
     public WebDriver driver;
     public WebDriverWait wait;
 
-    @BeforeSuite
+    @BeforeClass
     @Parameters("browser")
     public void setup(@Optional("chrome") String browser) {
         if(browser == "chrome"){
@@ -40,10 +40,10 @@ public class BaseTest {
         driver.get("https://www.decathlon.in/");
     }
 
-//    @AfterSuite
-//    public void tearDown() {
-//        if (driver != null) {
-//            driver.quit();
-//        }
-//    }
+    @AfterClass
+    public void tearDown() {
+        if (driver != null) {
+            driver.quit();
+        }
+    }
 }

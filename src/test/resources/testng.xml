@@ -6,8 +6,9 @@
     <test name="Decathlon eCommerce Test">
         <classes>
             <class name="com.decathlon.testng.test.LoginFunctionalTest" />
-<!--            <class name="com.decathlon.testng.test.CartWorkflowTest" />-->
-<!--            <class name="com.decathlon.testng.test.ProductSearchTest" />-->
+            <class name="com.decathlon.testng.test.ProductSearchTest" />
+            <class name="com.decathlon.testng.test.CartWorkflowTest" />
+            <class name="com.decathlon.testng.test.StoreLocationTest"/>
         </classes>
     </test>
 
