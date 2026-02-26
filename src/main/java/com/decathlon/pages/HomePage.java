@@ -15,6 +15,7 @@ public class HomePage {
     private WebDriverWait wait;
 
     public HomePage(WebDriver driver) {
+
         this.driver = driver;
     }
 
@@ -74,7 +75,6 @@ public class HomePage {
         for (String email : invalidEmails) {
             try {
                 System.out.println("Testing with email: " + email);
-
 
                 WebElement emailInput = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("input-email")));
                 emailInput.clear();
