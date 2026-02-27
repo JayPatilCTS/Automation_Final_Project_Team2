@@ -1,5 +1,6 @@
 package com.decathlon.pages;
 
+import com.decathlon.utils.ScreenShotUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -147,6 +148,8 @@ public class AddCart_Page extends ProductListPage {
             String emptyCart = driver.findElement(By.xpath("//p[normalize-space()='Missing your cart?']")).getText();
             Assert.assertEquals(emptyCart, "Missing your cart?");
             System.out.println("Product Deleted Successfully -- Now Cart is Empty");
+
+            ScreenShotUtils.captureScreenshot(driver, "EmptyCartValidation");
             Thread.sleep(2000);
             driver.findElement(By.xpath("//span[normalize-space()='Back to Shop']")).click();
         } catch (TimeoutException e){

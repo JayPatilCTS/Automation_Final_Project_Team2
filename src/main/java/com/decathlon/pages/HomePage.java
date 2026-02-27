@@ -1,6 +1,7 @@
 package com.decathlon.pages;
 
 import com.decathlon.utils.ExcelUtils;
+import com.decathlon.utils.ScreenShotUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -39,6 +40,7 @@ public class HomePage {
         Assert.assertTrue(actualTitle.contains(expectedTitle),
                 "Title mismatch! Expected to contain: " + expectedTitle + " but found: " + actualTitle);
         System.out.println("Title matches! == "+actualTitle);
+        ScreenShotUtils.captureScreenshot(driver, "HomePageVerification");
     }
 
     public void alertAndPopupHandle(){
