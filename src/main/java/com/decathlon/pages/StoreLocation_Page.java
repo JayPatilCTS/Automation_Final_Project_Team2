@@ -1,5 +1,7 @@
 package com.decathlon.pages;
 
+import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.decathlon.utils.ScreenShotUtils;
 import org.apache.commons.compress.utils.OsgiUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -46,14 +48,18 @@ public class StoreLocation_Page {
 
     public void searchStoreLocation(String city) throws InterruptedException {
         driver.findElement(By.xpath("//input[@placeholder='Enter City or State']")).sendKeys(city);
-        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class=\"pt-2 pb-0 px-2 azvbDj text-16 max-h-52 overflow-auto \"]//div"));
+        System.out.println("before list");
+        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class=\"pt-2 pb-0 px-2 tCnfmr text-16 max-h-52 overflow-auto \"]//div"));
         for (WebElement ll:locationList){
             if(ll.getText().equals("Chennai, OMR MARINA MALL")) {
+                System.out.println("select correct");
                 ll.click();
                 break;
             }
 
         }
+        Thread.sleep(2000);
+        ScreenShotUtils.captureScreenshot(driver, "LocationVerification");
         String locationAddress = driver.findElement(By.xpath("//div[@class=\"store-popup-info-image-detail-elem-class mt-2 text-grey-600 \"]//div[@class='store-popup-info-image-detail-elem-detail-class']")).getText();
         System.out.println("\nAddress of Location:");
         System.out.println(locationAddress);

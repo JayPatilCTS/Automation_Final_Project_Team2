@@ -18,8 +18,6 @@ public class BaseTest {
     @Parameters("browser")
     public void setup(@Optional("chrome") String browser) {
         if(browser == "chrome"){
-
-
             //handle notifications
             ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless=new");
