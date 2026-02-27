@@ -17,8 +17,6 @@ public class ProductSearchTest extends BaseTest {
 
     @Test(priority = 1)
     public void searchBoxFunction() throws InterruptedException {
-        String mainParent1 = driver.getWindowHandle();
-        System.out.println("home - "+mainParent1);
         product.searchBoxInput();
     }
 

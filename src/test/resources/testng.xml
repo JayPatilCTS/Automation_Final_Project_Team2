@@ -3,8 +3,13 @@
 <suite name="Decathlon eCommerce Suite">
     <parameter name="browser" value="chrome" />
 
+    <listeners>
+        <listener class-name="com.decathlon.utils.ExtentReportManager" />
+    </listeners>
+
     <test name="Decathlon eCommerce Test">
         <classes>
+            <class name="com.decathlon.testng.test.APIValidator"/>
             <class name="com.decathlon.testng.test.LoginFunctionalTest" />
             <class name="com.decathlon.testng.test.ProductSearchTest" />
             <class name="com.decathlon.testng.test.CartWorkflowTest" />

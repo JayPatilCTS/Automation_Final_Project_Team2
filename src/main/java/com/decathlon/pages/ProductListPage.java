@@ -1,5 +1,6 @@
 package com.decathlon.pages;
 
+import com.decathlon.utils.ScreenShotUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -47,7 +48,9 @@ public class ProductListPage {
         autoSearchBox.click();
         WebElement inputText = driver.findElement(By.xpath("//input[@type='text']"));
         inputText.sendKeys(text);
+
         Thread.sleep(2000);
+        ScreenShotUtils.captureScreenshot(driver, "AutoSuggestVerification");
 
         List<WebElement> optionlist = driver.findElements(By.xpath("//ul//li[@class='pr-3 text-14 cursor-pointer']"));
 
@@ -57,6 +60,7 @@ public class ProductListPage {
                 break;
             }
         }
+
     }
 
     public void sortSearchResult(){
