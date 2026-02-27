@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Decathlon eCommerce Suite">
+    <parameter name="browser" value="chrome" />
+
+    <test name="Decathlon eCommerce Test">
+        <classes>
+            <class name="com.decathlon.testng.test.LoginFunctionalTest" />
+            <class name="com.decathlon.testng.test.ProductSearchTest" />
+            <class name="com.decathlon.testng.test.CartWorkflowTest" />
+            <class name="com.decathlon.testng.test.StoreLocationTest"/>
+        </classes>
+    </test>
+
+</suite>
