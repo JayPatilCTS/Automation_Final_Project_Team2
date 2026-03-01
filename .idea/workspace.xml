@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9680c005-a2c0-4676-94fc-d1e8a7f70c4a" name="Changes" comment="" />
+    <list default="true" id="9680c005-a2c0-4676-94fc-d1e8a7f70c4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/AutoSuggestVerification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/EmptyCartValidation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/HomePageVerification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Screenshots/LocationVerification.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/reports/myReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/pages/AddCart_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/pages/ProductListPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/pages/StoreLocation_Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/utils/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/utils/ExcelUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/utils/ExtentReportManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/utils/ScreenShotUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/decathlon/utils/WaitManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/cucumber/cucumberRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/cucumber/steps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/testng/test/APIValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/testng/test/CartWorkflowTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/testng/test/LoginFunctionalTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/testng/test/ProductSearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/decathlon/testng/test/StoreLocationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/GiftCards.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testData/invalidUserCredentials.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJs_Automation_Final_Projecct_Doc_Team2.docx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,21 +48,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AdityaShindeCTS"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AdityaShindeCTS&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/JayPatilCTS/Automation_Final_Project_Team2",
-    "accountId": "9faa36d7-83c9-47c6-81fe-4834f72d43ac"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JayPatilCTS/Automation_Final_Project_Team2&quot;,
+    &quot;accountId&quot;: &quot;9faa36d7-83c9-47c6-81fe-4834f72d43ac&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3AKllKuvoDRcb47n6B7CZI6W0fn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,7 +73,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "git-widget-placeholder": "master",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging Aditya__branch",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>
