@@ -1,5 +1,6 @@
 package com.decathlon.pages;
 
+import com.decathlon.base.BaseTest;
 import com.decathlon.utils.ExcelUtils;
 import com.decathlon.utils.ScreenShotUtils;
 import org.openqa.selenium.*;
@@ -11,7 +12,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 
-public class HomePage {
+public class HomePage{
     private WebDriver driver;
     private WebDriverWait wait;
 
@@ -26,6 +27,7 @@ public class HomePage {
     }
 
     public String getHomePageTitle() {
+
         return driver.getTitle();
     }
 

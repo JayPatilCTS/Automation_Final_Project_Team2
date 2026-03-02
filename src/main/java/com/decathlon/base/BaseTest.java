@@ -23,7 +23,7 @@ public class BaseTest {
 //            options.addArguments("--headless=new");
             options.addArguments("--disable-notifications");
             options.addArguments("--disable-geolocation");
-            WebDriver driver = new ChromeDriver(options); // Initialize driver
+            driver = new ChromeDriver(options); // Initialize driver
 
         }
         else{
