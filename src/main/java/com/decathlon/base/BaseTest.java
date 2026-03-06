@@ -16,17 +16,17 @@ public class BaseTest {
 
     @BeforeClass
     @Parameters("browser")
-    public void setup(@Optional("chrome") String browser) {
-        if(browser == "chrome"){
+    public void setup(String browser) {
+        if(browser.equals("chrome")){
             //handle notifications
             ChromeOptions options = new ChromeOptions();
 //            options.addArguments("--headless=new");
             options.addArguments("--disable-notifications");
             options.addArguments("--disable-geolocation");
-            WebDriver driver = new ChromeDriver(options); // Initialize driver
+            driver = new ChromeDriver(options); // Initialize driver
 
-        }
-        else{
+        } else if (browser.equals("edge"))
+        {
             EdgeOptions options1 = new EdgeOptions();
 //            options1.addArguments("--headless=new");
             options1.addArguments("--disable-notifications");

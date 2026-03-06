@@ -20,22 +20,22 @@ public class ProductSearchTest extends BaseTest {
         product.searchBoxInput();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"searchBoxFunction"})
     public void autoSearchBoxFunction() throws InterruptedException {
         product.autoSearchBoxInput("shoe");
     }
 
-    @Test(priority = 3)
-    public void sortProductSearchResult(){
+    @Test(priority = 3, dependsOnMethods = {"searchBoxFunction","autoSearchBoxFunction"})
+    public void sortProductSearchResult() throws InterruptedException {
         product.sortSearchResult();
     }
 
-    @Test (priority = 4)
+    @Test (priority = 4, dependsOnMethods = {"autoSearchBoxFunction"})
     public void applyCategoryFilterCheckbox(){
         product.applyCheckboxValues();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = {"autoSearchBoxFunction"})
     public void applyPrice() throws InterruptedException {
         product.applyPriceSlider();
     }

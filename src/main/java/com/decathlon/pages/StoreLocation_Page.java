@@ -1,6 +1,6 @@
 package com.decathlon.pages;
 
-import com.aventstack.extentreports.reporter.configuration.Theme;
+//import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.decathlon.utils.ScreenShotUtils;
 import org.apache.commons.compress.utils.OsgiUtils;
 import org.openqa.selenium.By;
@@ -24,12 +24,14 @@ public class StoreLocation_Page {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void navigateKidCollectionInHoverMenu(){
+    public void navigateKidCollectionInHoverMenu() throws InterruptedException {
+        System.out.println("------------------------------------------------------------------------------");
         driver.findElement(By.xpath("//div[@class='flex items-center w-1/2 md:w-auto']//button//div")).click();
         WebElement moveToKidSection = driver.findElement(By.xpath("//div[normalize-space()='Kids Collection']"));
         Actions ac = new Actions(driver);
         ac.click(moveToKidSection).build().perform();
 
+        Thread.sleep(3000);
         List<WebElement> kidsCollectionList = driver.findElements(By.xpath("//div[@class='w-1/5 pt-5']//a"));
         System.out.println("Kids Collection List: ");
         for(WebElement wb : kidsCollectionList){
@@ -39,7 +41,7 @@ public class StoreLocation_Page {
 
     public void locateMyStoreAndVerify(){
         try {
-            driver.findElement(By.xpath("//button[@class='flex items-center']//div")).click();
+            //driver.findElement(By.xpath("//button[@class='flex items-center']//div")).click();
             driver.findElement(By.xpath("//p[normalize-space()='My Store']")).click();
         } catch (NoSuchElementException e){
             System.out.println("Not Able to Locate");
@@ -49,14 +51,14 @@ public class StoreLocation_Page {
     public void searchStoreLocation(String city) throws InterruptedException {
         driver.findElement(By.xpath("//input[@placeholder='Enter City or State']")).sendKeys(city);
         System.out.println("before list");
-        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class=\"pt-2 pb-0 px-2 tCnfmr text-16 max-h-52 overflow-auto \"]//div"));
+        Thread.sleep(2000);
+        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class='pt-2 pb-0 px-2 WVtHPP text-16 max-h-52 overflow-auto ']//div"));
         for (WebElement ll:locationList){
             if(ll.getText().equals("Chennai, OMR MARINA MALL")) {
                 System.out.println("select correct");
                 ll.click();
                 break;
             }
-
         }
         Thread.sleep(2000);
         ScreenShotUtils.captureScreenshot(driver, "LocationVerification");
@@ -69,14 +71,15 @@ public class StoreLocation_Page {
         driver.findElement(By.xpath("//button[normalize-space()='Change']")).click();
         WebElement pincodeBox = driver.findElement(By.xpath("//input[@placeholder='Pincode']"));
         pincodeBox.clear();
+        Thread.sleep(2000);
         pincodeBox.sendKeys(newPinCode);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[normalize-space()='APPLY']")).click();
 
-        Thread.sleep(3000);
+        Thread.sleep(2000);
         String updatedPinCode = driver.findElement(By.xpath("//div[@class=\"flex justify-center\"]//span")).getText();
         Assert.assertEquals(updatedPinCode, newPinCode );
-        System.out.println("PinCode change successfully");
-
-
+        System.out.println();
+        System.out.println("PinCode change successfully--" + updatedPinCode);
     }
 }

@@ -17,7 +17,7 @@ public class StoreLocationTest extends BaseTest {
     }
 
     @Test(priority = 1)
-    public void extractKidCollection(){
+    public void extractKidCollection() throws InterruptedException {
         store.navigateKidCollectionInHoverMenu();
     }
 
