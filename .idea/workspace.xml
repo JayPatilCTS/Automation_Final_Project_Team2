@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="00cf2940-29cd-4137-87d8-2a6aa16d9e7a" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;JayPatilCTS&quot;
+    }
+  ],
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;JayPatilCTS&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/JayPatilCTS/Automation_Final_Project_Team2.git&quot;,
+    &quot;accountId&quot;: &quot;49fe1dc8-8f0b-401a-8fbf-f04e31e0e225&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="3A48qIKBOHDX2BzYwIkoArFTIkN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Cucumber Java.Feature: FooterPolicy.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Private Policy and Terms Validation.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.cucumberRunner.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG.APIValidator.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.C:/Users/2464049/IdeaProjects/Decathlon_final_project_team2/src/test/resources/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CartWorkflowTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginFunctionalTest.Negative_Login.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginFunctionalTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginFunctionalTest.pageTitleAndLogoVerification.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProductSearchTest.autoSearchBoxFunction.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProductSearchTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.ProductSearchTest.sortProductSearchResult.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.StoreLocationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.cucumberRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Jaykumar__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/2464049/IdeaProjects/Decathlon_final_project_team2&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/2464049/IdeaProjects/Decathlon_final_project_team2/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\2464049\IdeaProjects\Decathlon_final_project_team2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\2464049\IdeaProjects\Decathlon_final_project_team2\testData" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Private Policy and Terms Validation">
+    <configuration name="Scenario: Private Policy and Terms Validation" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="7" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/FooterPolicy.feature" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Decathlon_final_project_team2" />
+      <option name="NAME_FILTER" value="^Private Policy and Terms Validation$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin teamcity --name &quot;^Private Policy and Terms Validation$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Private Policy and Terms Validation" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartWorkflowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Decathlon_final_project_team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.decathlon.testng.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.decathlon.testng.test" />
+      <option name="MAIN_CLASS_NAME" value="com.decathlon.testng.test.CartWorkflowTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginFunctionalTest.Negative_Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Decathlon_final_project_team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.decathlon.testng.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.decathlon.testng.test" />
+      <option name="MAIN_CLASS_NAME" value="com.decathlon.testng.test.LoginFunctionalTest" />
+      <option name="METHOD_NAME" value="Negative_Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginFunctionalTest.pageTitleAndLogoVerification" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Decathlon_final_project_team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.decathlon.testng.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.decathlon.testng.test" />
+      <option name="MAIN_CLASS_NAME" value="com.decathlon.testng.test.LoginFunctionalTest" />
+      <option name="METHOD_NAME" value="pageTitleAndLogoVerification" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductSearchTest.sortProductSearchResult" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Decathlon_final_project_team2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.decathlon.testng.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.decathlon.testng.test" />
+      <option name="MAIN_CLASS_NAME" value="com.decathlon.testng.test.ProductSearchTest" />
+      <option name="METHOD_NAME" value="sortProductSearchResult" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber Java.Scenario: Private Policy and Terms Validation" />
+        <item itemvalue="TestNG.CartWorkflowTest" />
+        <item itemvalue="TestNG.LoginFunctionalTest.Negative_Login" />
+        <item itemvalue="TestNG.LoginFunctionalTest.pageTitleAndLogoVerification" />
+        <item itemvalue="TestNG.ProductSearchTest.sortProductSearchResult" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00cf2940-29cd-4137-87d8-2a6aa16d9e7a" name="Changes" comment="" />
+      <created>1771840675013</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771840675013</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
