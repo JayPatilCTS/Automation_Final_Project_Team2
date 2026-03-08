@@ -63,9 +63,10 @@ public class ProductListPage {
 
     }
 
-    public void sortSearchResult(){
+    public void sortSearchResult() throws InterruptedException {
         WebElement sortDropdown = driver.findElement(By.xpath("//span[normalize-space()='Most Relevant']"));
         sortDropdown.click();
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//a[normalize-space()='Price: Low to High']")).click();
     }
 
@@ -77,26 +78,6 @@ public class ProductListPage {
             categoryList.get(i).click();
         }
     }
-
-//    public void applyPriceSlider() throws InterruptedException {
-//        WebElement maxSlider = driver.findElement(By.xpath("(//input[@type='range'])[2]"));
-//
-//// Print initial value
-//        System.out.println("Initial Max Value: " + maxSlider.getAttribute("value"));
-//
-//// Use JavaScript to set the slider value to 5000 and trigger UI update
-//        JavascriptExecutor js = (JavascriptExecutor) driver;
-//        Thread.sleep(3000);
-//        js.executeScript(
-//                "arguments[0].value = arguments[1]; arguments[0].dispatchEvent(new Event('input'));",
-//                maxSlider, "5000"
-//        );
-//
-//// Print updated value to confirm
-//        System.out.println("Updated Max Value: " + maxSlider.getAttribute("value"));
-//
-//    }
-
 
     public void applyPriceSlider() throws InterruptedException {
         // Locate the slider range bar
@@ -113,14 +94,4 @@ public class ProductListPage {
         // Print updated style
         System.out.println("Updated Range Style: " + rangeBar.getAttribute("style"));
     }
-
-
-
-
-
-
-
-
-
-
 }

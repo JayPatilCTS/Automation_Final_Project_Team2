@@ -1,11 +1,11 @@
 package com.decathlon.utils;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.io.FileHandler;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class ScreenShotUtils {
     public static void captureScreenshot(WebDriver driver, String screenshotName) {
@@ -20,7 +20,7 @@ public class ScreenShotUtils {
             // Copy file to destination
             FileHandler.copy(source, destination);
             System.out.println("Screenshot taken: " + screenshotName);
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Exception while taking screenshot: " + e.getMessage());
         }
     }

@@ -20,29 +20,27 @@ public class CartWorkflowTest extends BaseTest {
         addCart.retrieveProductItemDetails();
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, dependsOnMethods = {"validateProductDetails"})
     public void addCartWithoutSizeSele(){
         addCart.addToCartWithoutSizeSelection();
     }
 
-
-
-    @Test(priority = 3)
+    @Test(priority = 3, dependsOnMethods = {"validateProductDetails"})
     public void addCartWtSizeSele(){
         addCart.addToCartWithSizeSelection();
     }
 
-    @Test(priority = 4)
+    @Test(priority = 4, dependsOnMethods = {"addCartWtSizeSele"})
     public void cartPageOperation() throws InterruptedException {
         addCart.updateQuantityInCart();
     }
 
-    @Test(priority = 5)
+    @Test(priority = 5, dependsOnMethods = {"addCartWtSizeSele"})
     public void cartPriceValidation(){
         addCart.priceChangeValidation();
     }
 
-    @Test(priority = 6)
+    @Test(priority = 6, dependsOnMethods = {"addCartWtSizeSele"})
     public void clearCart() throws InterruptedException {
         addCart.clearCartAndVerify();
     }

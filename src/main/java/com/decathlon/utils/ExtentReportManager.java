@@ -23,17 +23,17 @@ public class ExtentReportManager implements ITestListener
 
         sparkReporter=new ExtentSparkReporter(System.getProperty("user.dir")+ "/reports/myReport.html");//specify location of the report
 
-        sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
-        sparkReporter.config().setReportName("Functional Testing"); // name of the report
+        sparkReporter.config().setDocumentTitle("Decathlon Automation Report"); // TiTle of report
+        sparkReporter.config().setReportName("Decathlon E-Commerce Website Functionality Automation Testing"); // name of the report
         sparkReporter.config().setTheme(Theme.DARK);
 
         extent=new ExtentReports();
         extent.attachReporter(sparkReporter);
 
         extent.setSystemInfo("Computer Name","localhost");
-        extent.setSystemInfo("Environment","QA");
-        extent.setSystemInfo("Tester Name","Jay");
-        extent.setSystemInfo("os","Windows10");
+        extent.setSystemInfo("Environment","Quality Assurance and Engineering");
+        extent.setSystemInfo("Tester Name","Jaykumar Patil ");
+        extent.setSystemInfo("os","Windows11");
         extent.setSystemInfo("Browser name","Chrome");
 
     }
@@ -51,7 +51,7 @@ public class ExtentReportManager implements ITestListener
         test = extent.createTest(result.getName());
         test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
         test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
-
+        test.addScreenCaptureFromPath(System.getProperty("user.dir")+"/ScreenshotsInReports/myReportScreenshot.png");
     }
 
     public void onTestSkipped(ITestResult result) {
