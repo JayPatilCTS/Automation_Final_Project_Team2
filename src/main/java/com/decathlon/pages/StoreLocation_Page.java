@@ -39,7 +39,7 @@ public class StoreLocation_Page {
 
     public void locateMyStoreAndVerify(){
         try {
-            driver.findElement(By.xpath("//button[@class='flex items-center']//div")).click();
+//            driver.findElement(By.xpath("//button[@class='flex items-center']//div")).click();
             driver.findElement(By.xpath("//p[normalize-space()='My Store']")).click();
         } catch (NoSuchElementException e){
             System.out.println("Not Able to Locate");
@@ -49,7 +49,7 @@ public class StoreLocation_Page {
     public void searchStoreLocation(String city) throws InterruptedException {
         driver.findElement(By.xpath("//input[@placeholder='Enter City or State']")).sendKeys(city);
         System.out.println("before list");
-        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class=\"pt-2 pb-0 px-2 tCnfmr text-16 max-h-52 overflow-auto \"]//div"));
+        List<WebElement> locationList = driver.findElements(By.xpath("//div[@class=\"pt-2 pb-0 px-2 WVtHPP text-16 max-h-52 overflow-auto \"]//div"));
         for (WebElement ll:locationList){
             if(ll.getText().equals("Chennai, OMR MARINA MALL")) {
                 System.out.println("select correct");

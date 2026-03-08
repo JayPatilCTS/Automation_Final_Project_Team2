@@ -1,46 +1,41 @@
 package com.decathlon.cucumber;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.time.Duration;
+import org.testng.Assert;
 
 public class steps {
+
     WebDriver driver;
-    @Given("the user is on the homepage")
-    public void navigateToHomePage() {
-        driver=new ChromeDriver();
-        driver.get("https://www.decathlon.in/");
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+    @Given("User is on the Homepage")
+    public void user_is_on_the_homepage() {
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
+        driver.get("https://www.decathlon.in/");
     }
 
-    @When("the user clicks on {string}")
-    public void the_user_clicks_on(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @When("User scrolls down to the footer section")
+    public void user_scrolls_down_to_the_footer_section() {
+        WebElement footer = driver.findElement(By.xpath("//div[@class='flex justify-between p-5']"));
+        ((org.openqa.selenium.JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", footer);
     }
 
-    @When("the user switches to the new gift card window")
-    public void the_user_switches_to_the_new_gift_card_window() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @When("User clicks on {string} link")
+    public void user_clicks_on_link(String linkText) {
+        WebElement link = driver.findElement(By.linkText(linkText));
+        link.click();
     }
 
-    @When("the user adds the gift card to the cart")
-    public void the_user_adds_the_gift_card_to_the_cart() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
-
-    @Then("the gift card should be successfully added to the cart")
-    public void the_gift_card_should_be_successfully_added_to_the_cart() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    @Then("The page title should be {string}")
+    public void the_page_title_should_be(String expectedTitle) {
+        String actualTitle = driver.getTitle();
+        System.out.println("Actual Title: "+actualTitle);
+        System.out.println("Expected Title: "+ expectedTitle);
+        Assert.assertEquals(actualTitle, expectedTitle, "Page title mismatch!");
+        driver.quit();
     }
 }
-
-

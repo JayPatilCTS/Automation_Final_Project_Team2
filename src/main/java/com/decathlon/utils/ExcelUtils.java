@@ -1,6 +1,9 @@
 package com.decathlon.utils;
 
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,16 +12,16 @@ import java.util.List;
         public static List<String> getInvalidEmails(String filePath) throws Exception {
             List<String> data = new ArrayList<>();
             FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"\\testData\\invalidUserCredentials.xlsx");
-            Workbook workbook = WorkbookFactory.create(fis);
-            Sheet sheet = workbook.getSheetAt(0); // Assuming data is in the first sheet
+            XSSFWorkbook wb = new XSSFWorkbook(fis);
+            XSSFSheet sh= wb.getSheet("Sheet1");
 
-            for (int i = 1; i <= sheet.getLastRowNum(); i++) {
-                Row row = sheet.getRow(i);
+            for (int i = 1; i <= sh.getLastRowNum(); i++) {
+                Row row = sh.getRow(i);
                 if (row != null && row.getCell(0) != null) {
                     data.add(row.getCell(0).getStringCellValue());
                 }
             }
-            workbook.close();
+            wb.close();
             return data;
         }
     }

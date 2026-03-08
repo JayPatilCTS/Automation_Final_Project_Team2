@@ -38,7 +38,6 @@ public class ExtentReportManager implements ITestListener
 
     }
 
-
     public void onTestSuccess(ITestResult result) {
 
         test = extent.createTest(result.getName()); // create a new enty in the report
@@ -47,7 +46,6 @@ public class ExtentReportManager implements ITestListener
     }
 
     public void onTestFailure(ITestResult result) {
-
         test = extent.createTest(result.getName());
         test.log(Status.FAIL, "Test case FAILED is:" + result.getName());
         test.log(Status.FAIL, "Test Case FAILED cause is: " + result.getThrowable());
@@ -61,9 +59,7 @@ public class ExtentReportManager implements ITestListener
 
     }
 
-
     public void onFinish(ITestContext context) {
-
         extent.flush();
     }
 }

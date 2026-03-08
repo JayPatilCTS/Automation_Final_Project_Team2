@@ -15,26 +15,25 @@ public class BaseTest {
     public WebDriverWait wait;
 
     @BeforeClass
-    @Parameters("browser")
-    public void setup(@Optional("chrome") String browser) {
-        if(browser == "chrome"){
-            //handle notifications
+    @Parameters({"browser"})
+    public void setup(String br) {
+        if (br.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-//            options.addArguments("--headless=new");
+            // options.addArguments("--headless=new");
             options.addArguments("--disable-notifications");
             options.addArguments("--disable-geolocation");
-            driver = new ChromeDriver(options); // Initialize driver
-
-        }
-        else{
+            driver = new ChromeDriver(options);
+        } else {
             EdgeOptions options1 = new EdgeOptions();
-//            options1.addArguments("--headless=new");
+            // options1.addArguments("--headless=new");
             options1.addArguments("--disable-notifications");
             options1.addArguments("--disable-geolocation");
             driver = new EdgeDriver(options1);
         }
+
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.get("https://www.decathlon.in/");
     }
 
